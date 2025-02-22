@@ -4,8 +4,8 @@ lua54 'yes'
 
 name "sc_licensemanager"
 author "ScubeScripts"
-description ""
-version "1.0.3"
+description "A simple script to check, assign or remove licenses."
+version "1.0.4"
 
 server_scripts {
     '@oxmysql/lib/MySQL.lua',

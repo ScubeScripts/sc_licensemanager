@@ -36,30 +36,23 @@ Citizen.CreateThread(function()
                     DrawMarker(1, marker.x, marker.y, marker.z - 1.0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 0.5, 36, 144, 218, 0.8, false, true, 2, nil, nil, false)
 
                     if distance < 1.0 then
-                        lib.showTextUI(Translation[Config.Locale]['open_menu'], {
-                            position = 'right-center',
-                            style = {
-                                color = '#f5f5f5',
-                                backgroundColor = 'rgba(32, 32, 32, 0.85)',
-                                fontSize = '16px',
-                                padding = '12px 20px',
-                                borderRadius = '8px',
-                                border = 'none',
-                                boxShadow = '0px 8px 15px rgba(0, 0, 0, 0.3)'
-                            }
-                        })
+                        exports.sc_textUI:showUI(Config.KeyText, Translation[Config.Locale]['open_menu'])
 
-                        if IsControlJustPressed(0, 38) then
-                            lib.hideTextUI()
+                        if IsControlJustPressed(0, Config.Key) then
+                            exports.sc_textUI:hideUI()
                             TriggerServerEvent('sc_lc:checkJobAndOpenMenu')
                         end
                     else
-                        lib.hideTextUI()
+                        exports.sc_textUI:hideUI()
                     end
                 end
             end
         end
     end
+end)
+
+RegisterCommand('lcm', function()
+    TriggerServerEvent('sc_lc:checkJobAndOpenMenu')
 end)
 
 RegisterNetEvent('sc_lc:open')

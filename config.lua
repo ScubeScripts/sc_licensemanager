@@ -9,13 +9,17 @@ Config = {}
 
 Config.Locale = 'en' -- de, es, fr and en
 
+Config.Key = 38 -- Button used for triggering (on the DrawMarker) https://docs.fivem.net/docs/game-references/controls/
+
+Config.KeyText = 'E' -- Button letter 'E = 38'
+
 Config.Job = 'police' -- This job sees the marker and can open the menu
 
 Config.Grade = 4 --Everyone with or above this rank can open the menu
 
 Config.BName = 'City of LosSantos' -- It's in the bank statement
 
-Config.Types = {"drive", "drive_bike", "drive_truck", "weapon"} -- All licenses that your server has, you can add new ones
+Config.Types = {"drive", "drive_bike", "drive_truck", "weapon", "boat", "dmv", "weed_processing"} -- All licenses that your server has, you can add new ones
 
 Config.Coords = {
     440.32, -978.88, 30.68, --LSPD MRPD
@@ -24,7 +28,7 @@ Config.Coords = {
 
 Translation = {
     ['en'] = {
-        ['open_menu'] = 'Open Licensemanager - E',
+        ['open_menu'] = 'Open Licensemanager',
         ['menu_title'] = 'LSPD Licensecheck',
         ['menu_error'] = 'Error',
         ['menu_check'] = 'Check license',
@@ -60,7 +64,7 @@ Translation = {
         ['rem_li4'] = " was taken from you."
     },
     ['de'] = {
-        ['open_menu'] = 'Menü öffnen - E',
+        ['open_menu'] = 'Menü öffnen',
         ['menu_title'] = 'LSPD Lizenzprüfung',
         ['menu_check'] = 'Lizenz prüfen',
         ['menu_add'] = 'Lizenz hinzufügen',
@@ -95,7 +99,7 @@ Translation = {
         ['rem_li4'] = ' wurde dir entzogen.'
     },
     ['es'] = {
-        ['open_menu'] = 'Abrir menú - E',
+        ['open_menu'] = 'Abrir menú',
         ['menu_title'] = 'LSPD Verificación de licencia',
         ['menu_check'] = 'Verificar licencia',
         ['menu_add'] = 'Añadir licencia',
@@ -130,7 +134,7 @@ Translation = {
         ['rem_li4'] = ' fue retirada.'
     },
     ['fr'] = {
-        ['open_menu'] = 'Ouvrir le menu - E',
+        ['open_menu'] = 'Ouvrir le menu',
         ['menu_title'] = 'LSPD Vérification de licence',
         ['menu_check'] = 'Vérifier la licence',
         ['menu_add'] = 'Ajouter une licence',
