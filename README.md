@@ -13,7 +13,7 @@
 
 > [ESX-Legacy](https://github.com/esx-framework/esx-legacy)
 
-> [ox_lib](https://github.com/overextended/ox_lib)
+> [sc_textUI](https://github.com/ScubeScripts/sc_textUI)
 
 ## Installation
 Clone or download this repository
